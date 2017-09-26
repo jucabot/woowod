@@ -1,0 +1,217 @@
+{
+	"Cardio": [{
+			"template": "%(cardio.task)s for 20 minutes",
+			"delay": 20,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "LowIntensity"
+			}],
+			"score": "distance"
+		},
+		{
+			"template": "%(cardio.task)s 3 x Tabata 2' rest",
+			"delay": 16,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "LowIntensity"
+			}],
+			"score": "distance"
+
+		},
+		{
+			"template": "%(cardio.task)s 2 x interval 5x(1'30'' work + 30'') / 2' rest between intervals",
+			"delay": 22,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "LowIntensity"
+			}],
+			"score": "distance"
+		}
+
+	],
+	"Gym" : [
+		{
+			"template":"%(gym.task)s for 20 minutes",
+			"delay" : 20,
+			"moves": [{
+				"category": "Gym",
+				"intensity": "HighIntensity"
+			}],
+			"score": "reps"
+
+		},
+		{
+			"template":"%(gym.task)s 3 x Tabata 2' rest",
+			"delay" : 16,
+			"moves": [{
+				"category": "Gym",
+				"intensity": "HighIntensity"
+			}],
+			"score": "reps"
+		}
+		],
+	"Weight" : [
+		{
+			"template":"7x1 RM %(weightlifting.task)s for 20 minutes",
+			"delay" : 20,
+			"moves": [{
+				"category": "Weightlifting",
+				"intensity": "HighIntensity"
+			}],
+			"score": "load"
+		}
+		],
+	"Cardio+Gym" : [
+		{
+			"template":"5 RFT of \n \t - %(cardio.task)s %(cardio.intensity)s \t - %(gym.intensity)s %(gym.task)s",
+			"delay" : 20,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "HighIntensity"
+			},
+			{
+				"category": "Gym",
+				"intensity": "HighIntensity"
+			}],
+			"score": "time"
+		},
+		{
+			"template":"21-15-9 of \n \t - %(cardio.task)s %(cardio.intensity)s \t - %(gym.task)s",
+			"delay" : 20,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "HighIntensity"
+			},
+			{
+				"category": "Gym",
+				"intensity": "HighIntensity"
+			}],
+			"score": "time"
+
+		},
+		{
+			"template":"50-40-30-20-10 of \n \t - %(cardio.task)s %(cardio.intensity)s \t - %(gym.task)s",
+			"delay" : 20,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "HighIntensity"
+			},
+			{
+				"category": "Gym",
+				"intensity": "HighIntensity"
+			}],
+			"score": "time"
+
+		}
+
+		],
+
+	"Cardio+Weight" : [
+		{
+			"template":"5 RFT of \n \t - %(cardio.task)s %(cardio.intensity)s \t - 10 %(weightlifting.task)s @ %(weightlifting.intensity)s",
+			"delay" : 20,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "HighIntensity"
+			},
+			{
+				"category": "Weightlifting",
+				"intensity": "HighIntensity"
+			}],
+			"score": "time"
+		},
+		{
+			"template":"21-15-9 of \n \t - %(cardio.task)s %(cardio.intensity)s \t - %(weightlifting.task)s @%(weightlifting.intensity)s",
+			"delay" : 20,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "HighIntensity"
+			},
+			{
+				"category": "Weightlifting",
+				"intensity": "HighIntensity"
+			}],
+			"score": "time"
+		},
+		{
+			"template":"50-40-30-20-10 of \n \t - %(cardio.task)s %(cardio.intensity)s \t - %(weightlifting.task)s @%(weightlifting.intensity)s",
+			"delay" : 20,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "HighIntensity"
+			},
+			{
+				"category": "Weightlifting",
+				"intensity": "HighIntensity"
+			}],
+			"score": "time"
+		}
+
+		],
+	"Gym+Weight" : [
+		{
+			"template":"5 RFT of \n \t - %(gym.intensity)s %(gym.task)s  \t - 15 %(weightlifting.task)s @ 75%%",
+			"delay" : 20,
+			"moves": [{
+				"category": "Gym",
+				"intensity": "HighIntensity"
+			},
+			{
+				"category": "Weightlifting",
+				"intensity": "ModerateIntensity"
+			}],
+			"score": "time"
+		},
+		{
+			"template":"21-15-9 of \n \t - %(gym.task)s \t - %(weightlifting.task)s @75%%",
+			"delay" : 20,
+			"moves": [{
+				"category": "Gym",
+				"intensity": "HighIntensity"
+			},
+			{
+				"category": "Weightlifting",
+				"intensity": "ModerateIntensity"
+			}],
+			"score": "time"
+		},
+		{
+			"template":"50-40-30-20-10 of \n \t - %(gym.task)s \t - 15 %(weightlifting.task)s @50%%",
+			"delay" : 20,
+			"moves": [{
+				"category": "Gym",
+				"intensity": "HighIntensity"
+			},
+			{
+				"category": "Weightlifting",
+				"intensity": "ModerateIntensity"
+			}],
+			"score": "time"
+		}
+
+		],
+	"Cardio+Gym+Weight" : [
+		{
+			"template":"AMRAP 20' of \n \t - %(cardio.intensity)s %(cardio.task)s \n \t - %(gym.intensity)s %(gym.task)s  \n \t - - 15 %(weightlifting.task)s @ 50%%",
+			"delay" : 20,
+			"moves": [{
+				"category": "Cardio",
+				"intensity": "ModerateIntensity"
+			},{
+				"category": "Gym",
+				"intensity": "ModerateIntensity"
+			},
+			{
+				"category": "Weightlifting",
+				"intensity": "ModerateIntensity"
+			}],
+			"score": "reps"
+		}
+
+		]
+
+
+
+
+
+}

@@ -1,0 +1,35 @@
+Mode;Task;LowIntensity;ModerateIntensity;HighIntensity;Warmup
+Cardio;Run;5k;1.6k;400m;400m
+Cardio;Jump Rope;350;70;35;20
+Cardio;Row;250 cal;50 cal;15 cal;20cal
+Gym;Air squat;50;30;;20
+Gym;Pullups;50;20;10;15
+Gym;Toes to bar;50;20;10;15
+Gym;Pistols;50;20;10;15
+Gym;Pushups;50;20;;15
+Gym;Dips;;20;10;15
+Gym;HSPU;;20;10;15
+Gym;Rope Climb;;;;15
+Gym;Wall climb;;15;5;15
+Gym;Muscle ups;;15;5;15
+Gym;Back extention;50;30;;15
+Gym;Sit ups;50;20;;15
+Gym;Box Jump;;20;10;15
+Gym;Lunges;;20;;15
+Gym;Burpees;;20;;15
+Weightlifting;Deadlift;;75%;85%;10
+Weightlifting;Sumo deadlift High pull;;75%;85%;10
+Weightlifting;Clean;;75%;85%;10
+Weightlifting;Push press;;75%;85%;10
+Weightlifting;Strict press;;75%;85%;10
+Weightlifting;Jerk;;75%;85%;10
+Weightlifting;Snatch;;75%;85%;10
+Weightlifting;Clean & Jerk;;75%;85%;10
+Weightlifting;Squat;;75%;85%;10
+Weightlifting;Bench press;;75%;85%;10
+Weightlifting;Thruster;;75%;85%;10
+Weightlifting;Cluster;;75%;85%;10
+Weightlifting;OHS;;75%;85%;10
+Weightlifting;Swing;;75%;;10
+Weightlifting;Farmer walk;;75%;;10
+Weightlifting;Wall ball;;9kg;;10
