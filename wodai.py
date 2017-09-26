@@ -22,7 +22,11 @@ class Wod(object):
 		self.state = self.UNBUILT
 
 	def __str__(self):
-		return "%s" % (self.metcon["description"])
+		return """
+		Warmup : %(warmup)s
+		WOD : for %(score)s (cap time %(delay)i')
+		%(description)s
+		""" % (self.metcon)
 
 	def build(self):
 
@@ -31,10 +35,13 @@ class Wod(object):
 		for move in moves:
 			move["move"] = self._choice_one_move(category=move["category"],intensity=move["intensity"])
 
+		self.warmup = self._build_warmup(metcon)
+
 		self.metcon = {
 			"description" : self._build_metcon(metcon),
 			"score" : metcon["score"],
-			"delay" : metcon["delay"]
+			"delay" : metcon["delay"],
+			"warmup" : self.warmup,
 			}
 
 		self.state = self.BUILT
@@ -59,18 +66,14 @@ class Wod(object):
 		return template % (flatten_moves)
 
 
-	def _build_warmup(self,cardio=None,gym=None,weight=None):
+	def _build_warmup(self,metcon):
 
 		warmup = []
 
-		if cardio:
-			warmup.append(cardio["Warmup"])
-		if gym:
-			warmup.append(gym["Warmup"])
-		if weight:
-			warmup.append(weight["Warmup"])
+		for move in metcon["moves"]:
+			warmup.append(move["move"]["Warmup"])
 
-		return "\n".join(warmup)
+		return " + ".join(warmup)
 
 class Box(object):
 
